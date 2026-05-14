@@ -10,13 +10,13 @@
 </style>
 <style>
   :root {
-    --black: #0A0A0A;
-    --gold: #C9A84C;
-    --gold-light: #E8C96D;
-    --offwhite: #F5F0E8;
-    --warm-bg: #F5EAD0;
-    --hairline: rgba(201,168,76,.28);
-    --hairline-dark: rgba(10,10,10,.14);
+    --black: #1A0A0F;
+    --gold: #C4857A;
+    --gold-light: #E8B4B0;
+    --offwhite: #FDF5F5;
+    --warm-bg: #F7ECED;
+    --hairline: rgba(196,133,122,.3);
+    --hairline-dark: rgba(26,10,15,.14);
   }
 
   *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
@@ -60,7 +60,7 @@
   /* ── monogram ── */
   .monogram { position: relative; display: inline-block; width: var(--mg, 200px); height: var(--mg, 200px); flex-shrink: 0; }
   .monogram .ring { position: absolute; inset: 0; border: 1px solid var(--gold); border-radius: 50%; }
-  .monogram .ring.inner { inset: 7%; border-color: rgba(201,168,76,.32); }
+  .monogram .ring.inner { inset: 7%; border-color: rgba(196,133,122,.32); }
   .monogram .va { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
   .monogram .va .v, .monogram .va .a { font-family: 'Bodoni Moda', serif; font-weight: 500; font-size: calc(var(--mg, 200px) * .68); color: var(--gold); line-height: 1; display: inline-block; }
   .monogram .va .v { transform: translateX(calc(var(--mg, 200px) * .08)); }
@@ -85,14 +85,14 @@
     background: rgba(10,10,10,.92);
     backdrop-filter: blur(12px);
     -webkit-backdrop-filter: blur(12px);
-    border-bottom: 1px solid rgba(201,168,76,.12);
+    border-bottom: 1px solid rgba(196,133,122,.12);
   }
   nav .nav-mark { font-family: 'Bodoni Moda', serif; font-size: 16px; letter-spacing: .55em; color: var(--offwhite); text-decoration: none; padding-left: .55em; }
   nav .nav-links { display: flex; gap: 36px; list-style: none; }
   nav .nav-links a { font-size: 10px; letter-spacing: .3em; text-transform: uppercase; color: rgba(245,240,232,.92); text-decoration: none; transition: color .25s; }
   nav .nav-links a:hover { color: var(--gold); }
   nav .nav-right { display: flex; align-items: center; gap: 20px; }
-  nav .nav-cta { font-size: 10px; letter-spacing: .28em; text-transform: uppercase; color: var(--gold); text-decoration: none; border: 1px solid rgba(201,168,76,.45); padding: 9px 20px; transition: border-color .25s, color .25s; white-space: nowrap; }
+  nav .nav-cta { font-size: 10px; letter-spacing: .28em; text-transform: uppercase; color: var(--gold); text-decoration: none; border: 1px solid rgba(196,133,122,.45); padding: 9px 20px; transition: border-color .25s, color .25s; white-space: nowrap; }
   nav .nav-cta:hover { border-color: var(--gold); color: var(--gold-light); }
 
   /* hamburger */
@@ -117,7 +117,7 @@
     gap: 40px; position: relative; overflow: hidden;
     padding: 120px 40px 80px;
   }
-  .hero::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(201,168,76,.03) 0 1px, transparent 1px 80px), repeating-linear-gradient(90deg, rgba(201,168,76,.03) 0 1px, transparent 1px 80px); pointer-events: none; }
+  .hero::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(196,133,122,.03) 0 1px, transparent 1px 80px), repeating-linear-gradient(90deg, rgba(196,133,122,.03) 0 1px, transparent 1px 80px); pointer-events: none; }
   .hero::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 50% 40%, transparent 50%, rgba(245,234,208,.7) 100%); pointer-events: none; }
   .hero-eyebrow { font-size: 10px; letter-spacing: .38em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; position: relative; z-index: 1; text-align: center; }
   .hero-monogram { position: relative; z-index: 1; animation: fadeUp .9s ease both; }
@@ -140,7 +140,7 @@
   .intro-left { flex: 0 0 420px; }
   .intro-eyebrow { display: flex; align-items: center; gap: 16px; margin-bottom: 24px; }
   .intro-eyebrow .rule { width: 48px; height: 1px; background: var(--gold); flex-shrink: 0; }
-  .intro-eyebrow span { font-size: 13px; letter-spacing: .4em; text-transform: uppercase; color: #A8882A; }
+  .intro-eyebrow span { font-size: 13px; letter-spacing: .4em; text-transform: uppercase; color: #9E5C55; }
   .intro-headline { font-family: 'Bodoni Moda', serif; font-weight: 400; font-size: clamp(40px, 5vw, 64px); line-height: 1.05; letter-spacing: .01em; }
   .intro-right { flex: 1; padding-top: 16px; }
   .intro-quote { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: clamp(20px, 2.5vw, 30px); font-weight: 300; line-height: 1.4; color: var(--black); margin-bottom: 36px; }
@@ -154,21 +154,21 @@
   .collection-header h2 { font-family: 'Bodoni Moda', serif; font-size: clamp(36px, 4vw, 56px); font-weight: 400; letter-spacing: .01em; line-height: 1.05; }
   .collection-header p { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 21px; color: rgba(10,10,10,.75); max-width: 320px; text-align: right; line-height: 1.5; }
   .pieces-grid { display: grid; grid-template-columns: repeat(3, 1fr); gap: 8px; }
-  .piece { position: relative; background: #F0E4C4; aspect-ratio: 3/4; overflow: hidden; cursor: pointer; }
+  .piece { position: relative; background: #F9EEF0; aspect-ratio: 3/4; overflow: hidden; cursor: pointer; }
   .piece::before { display: none; }
   .piece-stone { position: absolute; inset: 0; display: flex; align-items: center; justify-content: center; }
   .stone-shape { position: relative; }
   .stone-sq { width: 90px; height: 90px; background: #000000; transform: rotate(45deg); box-shadow: inset 0 0 0 1px var(--gold), 0 20px 40px -10px rgba(0,0,0,.8); position: relative; }
-  .stone-sq::before { content: ""; position: absolute; inset: 14%; background: #1a1a1a; }
-  .stone-sq::after { content: ""; position: absolute; left:0;right:0;top:50%;height:1px;background:rgba(201,168,76,.4); }
+  .stone-sq::before { content: ""; position: absolute; inset: 14%; background: #2a1015; }
+  .stone-sq::after { content: ""; position: absolute; left:0;right:0;top:50%;height:1px;background:rgba(196,133,122,.4); }
   .stone-oval { width: 60px; height: 90px; background: #000000; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--gold), 0 20px 40px -10px rgba(0,0,0,.8); position: relative; }
-  .stone-oval::before { content: ""; position: absolute; inset: 14%; background: #1a1a1a; border-radius: 50%; }
-  .stone-oval::after { content: ""; position: absolute; left:0;right:0;top:50%;height:1px;background:rgba(201,168,76,.4); }
+  .stone-oval::before { content: ""; position: absolute; inset: 14%; background: #2a1015; border-radius: 50%; }
+  .stone-oval::after { content: ""; position: absolute; left:0;right:0;top:50%;height:1px;background:rgba(196,133,122,.4); }
   .stone-round { width: 90px; height: 90px; background: #000000; border-radius: 50%; box-shadow: inset 0 0 0 1px var(--gold), 0 20px 40px -10px rgba(0,0,0,.8); position: relative; }
-  .stone-round::before { content: ""; position: absolute; inset: 14%; background: #1a1a1a; border-radius: 50%; }
-  .stone-round::after { content: ""; position: absolute; left:0;right:0;top:50%;height:1px;background:rgba(201,168,76,.4); }
-  .piece-frame { position: absolute; inset: 16px; border: 1px solid rgba(180,140,40,.55); pointer-events: none; transition: border-color .4s; }
-  .piece:hover .piece-frame { border-color: rgba(180,140,40,.9); }
+  .stone-round::before { content: ""; position: absolute; inset: 14%; background: #2a1015; border-radius: 50%; }
+  .stone-round::after { content: ""; position: absolute; left:0;right:0;top:50%;height:1px;background:rgba(196,133,122,.4); }
+  .piece-frame { position: absolute; inset: 16px; border: 1px solid rgba(196,133,122,.55); pointer-events: none; transition: border-color .4s; }
+  .piece:hover .piece-frame { border-color: rgba(196,133,122,.9); }
   .piece-info { position: absolute; bottom: 0; left: 0; right: 0; padding: 24px 20px; background: linear-gradient(transparent, rgba(10,10,10,.96)); transform: translateY(8px); opacity: 0; transition: opacity .35s, transform .35s; }
   .piece:hover .piece-info { opacity: 1; transform: translateY(0); }
   .piece-name { font-family: 'Bodoni Moda', serif; font-size: 18px; font-weight: 400; letter-spacing: .04em; margin-bottom: 6px; color: var(--offwhite); }
@@ -195,15 +195,15 @@
   .stat .label { font-size: 9px; letter-spacing: .34em; text-transform: uppercase; color: #6b6b6b; margin-top: 8px; }
   .atelier-text .eyebrow { display: flex; align-items: center; gap: 16px; margin-bottom: 22px; }
   .atelier-text .eyebrow .rule { width: 48px; height: 1px; background: var(--gold); flex-shrink: 0; }
-  .atelier-text .eyebrow span { font-size: 13px; letter-spacing: .4em; text-transform: uppercase; color: #A8882A; }
+  .atelier-text .eyebrow span { font-size: 13px; letter-spacing: .4em; text-transform: uppercase; color: #9E5C55; }
   .atelier-text h2 { font-family: 'Bodoni Moda', serif; font-size: clamp(34px, 4vw, 52px); font-weight: 400; line-height: 1.08; margin-bottom: 26px; }
   .atelier-text blockquote { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 20px; font-weight: 300; line-height: 1.5; color: #6b6b6b; border-left: 2px solid var(--gold); padding-left: 24px; margin-bottom: 28px; }
   .atelier-text p { font-size: 14px; line-height: 1.8; color: #3a3a3a; margin-bottom: 36px; }
 
   /* ── bespoke ── */
   .bespoke { background: var(--warm-bg); padding: 120px 40px; text-align: center; position: relative; overflow: hidden; }
-  .bespoke::before { content: ""; position: absolute; top: 50%; left: 50%; width: min(700px, 90vw); height: min(700px, 90vw); border-radius: 50%; border: 1px solid rgba(201,168,76,.38); transform: translate(-50%,-50%); }
-  .bespoke::after { content: ""; position: absolute; top: 50%; left: 50%; width: min(900px, 110vw); height: min(900px, 110vw); border-radius: 50%; border: 1px solid rgba(201,168,76,.22); transform: translate(-50%,-50%); }
+  .bespoke::before { content: ""; position: absolute; top: 50%; left: 50%; width: min(700px, 90vw); height: min(700px, 90vw); border-radius: 50%; border: 1px solid rgba(196,133,122,.38); transform: translate(-50%,-50%); }
+  .bespoke::after { content: ""; position: absolute; top: 50%; left: 50%; width: min(900px, 110vw); height: min(900px, 110vw); border-radius: 50%; border: 1px solid rgba(196,133,122,.22); transform: translate(-50%,-50%); }
   .bespoke-inner { position: relative; z-index: 1; max-width: 660px; margin: 0 auto; display: flex; flex-direction: column; align-items: center; gap: 28px; }
   .bespoke-eyebrow { font-size: 10px; letter-spacing: .42em; text-transform: uppercase; color: var(--black); display: flex; align-items: center; gap: 16px; }
   .bespoke-eyebrow .rule { width: 32px; height: 1px; background: var(--black); }
@@ -221,11 +221,11 @@
   .field::placeholder { color: #9b9b9b; }
   .field:focus { border-color: var(--gold); }
   .form-submit { width: 100%; background: var(--black); color: var(--offwhite); border: none; padding: 15px; font-family: 'Inter', sans-serif; font-size: 10px; letter-spacing: .36em; text-transform: uppercase; cursor: pointer; transition: background .25s; }
-  .form-submit:hover { background: #1a1a1a; }
+  .form-submit:hover { background: #2a1015; }
   .form-note { font-size: 10px; letter-spacing: .16em; color: #9b9b9b; text-transform: uppercase; }
 
   /* ── footer ── */
-  footer { background: #0A0A0A; padding: 72px 60px 36px; border-top: 1px solid rgba(201,168,76,.12); }
+  footer { background: #1A0A0F; padding: 72px 60px 36px; border-top: 1px solid rgba(196,133,122,.12); }
   .footer-top { display: grid; grid-template-columns: 2fr 1fr 1fr 1fr; gap: 48px; padding-bottom: 48px; border-bottom: 1px solid rgba(245,240,232,.08); }
   .footer-wordmark { font-family: 'Bodoni Moda', serif; font-size: 17px; letter-spacing: .44em; padding-left: .44em; color: var(--offwhite); margin-bottom: 18px; display: block; }
   .footer-tagline { font-family: 'Cormorant Garamond', serif; font-style: italic; font-size: 15px; font-weight: 300; color: rgba(245,240,232,.5); line-height: 1.6; max-width: 260px; }
@@ -397,7 +397,7 @@
     <div>
       <div style="display:flex;align-items:center;gap:16px;margin-bottom:18px">
         <span style="width:48px;height:1px;background:var(--gold);display:block;flex-shrink:0"></span>
-        <span class="smallcaps" style="color:#A8882A;font-size:13px">
+        <span class="smallcaps" style="color:#9E5C55;font-size:13px">
           <span class="lang-tr">GÜNCEL KOLEKSİYON</span><span class="lang-en">CURRENT COLLECTION</span>
         </span>
       </div>
