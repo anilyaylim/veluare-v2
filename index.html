@@ -116,9 +116,10 @@
     display: flex; flex-direction: column; align-items: center; justify-content: center;
     gap: 40px; position: relative; overflow: hidden;
     padding: 120px 40px 80px;
+    background: linear-gradient(150deg, #FDF5F5 0%, #F7ECED 50%, #E5BEBB 100%);
   }
   .hero::before { content: ""; position: absolute; inset: 0; background: repeating-linear-gradient(0deg, rgba(196,133,122,.03) 0 1px, transparent 1px 80px), repeating-linear-gradient(90deg, rgba(196,133,122,.03) 0 1px, transparent 1px 80px); pointer-events: none; }
-  .hero::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 50% 40%, transparent 50%, rgba(245,234,208,.7) 100%); pointer-events: none; }
+  .hero::after { content: ""; position: absolute; inset: 0; background: radial-gradient(ellipse 60% 60% at 50% 40%, transparent 50%, rgba(196,133,122,.22) 100%); pointer-events: none; }
   .hero-eyebrow { font-size: 10px; letter-spacing: .38em; text-transform: uppercase; color: var(--gold); display: flex; align-items: center; position: relative; z-index: 1; text-align: center; }
   .hero-monogram { position: relative; z-index: 1; animation: fadeUp .9s ease both; }
   @keyframes fadeUp { from { opacity: 0; transform: translateY(20px); } to { opacity: 1; transform: translateY(0); } }
